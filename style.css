@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+}
+
+.col {
+    float: left;
+    position: relative;
+}
+
+.col:before {
+    display: table;
+    content: "";
+    clear:both;
+}
+
+.col:after {
+    display: table;
+    content: "";
+    clear:both;
+}
+
+.circle {
+    float: left;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
